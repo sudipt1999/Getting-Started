@@ -2,6 +2,14 @@
 
 Refer this cheat sheet when ever you are stuck somewhere. 
 
+## Setting up softwares
+
+To work on Github hosted projects, one has to use Git - a Version Control System. So the first task is to install git on your machine. For Windows users, download git from here - https://git-scm.com/downloads. For Linux users, you can use your distro's package manager to install git.
+
+Note: Although Linux isn't mandatory, it is preferred while working with Open Source Software.
+
+Note: You can learn about Version Control Systems (VCS) here.
+
 ## Tell Git Who You Are ?
 
 > Configure the author name and email address to be used with your commits.
