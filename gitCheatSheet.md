@@ -12,11 +12,46 @@ git config --global user.name "your Name"
 git config --global user.email your@example.com
 ```
 
-## Create a new local repository
+## Check out a repository
 
-> Initializing a repo with git 
+> Create a working copy of a local repository: 
 
 ```
-git init
+git clone /path/to/repository
 ```
 
+## Add files
+
+> Add one or more files to repo: 
+
+```
+git add <file>
+```
+> Or you can add all files at a single time: 
+
+```
+git add .
+```
+
+
+## Reseting added files
+
+> Often you would add files mistakenly to repo now you feel to discard the added file(s):
+
+```
+git reset <file>
+```
+
+## Commit
+
+> Commit changes to head (but not yet to the remote repository):
+
+```
+git commit -m "Commit message"
+```
+
+> Commit any files you've added with git add, and also commit any files you've changed since then:
+
+```
+git commit -a
+```
