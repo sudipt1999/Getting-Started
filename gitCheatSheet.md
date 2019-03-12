@@ -11,3 +11,12 @@ Note that Git strips some characters (for example trailing periods) from user.na
 git config --global user.name "your Name"
 git config --global user.email your@example.com
 ```
+
+## Create a new local repository
+
+> Initializing a repo with git 
+
+```
+git init
+```
+
