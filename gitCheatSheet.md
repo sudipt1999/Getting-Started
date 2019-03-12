@@ -41,6 +41,13 @@ git add <file>
 git add .
 ```
 
+## Status
+
+> List the files you've changed and those you still need to add or commit: 
+
+```
+git status
+```
 
 ## Reseting added files
 
@@ -63,3 +70,151 @@ git commit -m "Commit message"
 ```
 git commit -a
 ```
+Note : Writing a good commit message is a art, kindly refer to [link](https://github.com/erlang/otp/wiki/writing-good-commit-messages) to know more about writing good commit message.
+
+
+## Push
+
+> Send changes to the master branch of your remote repository:
+
+```
+git push origin master
+```
+
+> You can also push updates to specific branch on remote repository:
+
+```
+git push origin <branch>
+```
+
+## Connect to a remote repository
+
+> If you haven't connected your local repository to a remote server, add the server to be able to push to it:
+
+```
+git remote add origin <url>
+```
+
+Note: This is used when you have forked a repo, it adds the repo to the list you can pull and push(if you have access) to the remote repo.
+
+> List all currently configured remote repositories:
+
+```
+git remote -v
+```
+
+## Branches
+
+> List all the branches in your repo, and also tell you what branch you're currently in:
+
+```
+git branch
+```
+
+> Create a new branch and switch to it:
+
+```
+git checkout -b <branchname>
+```
+
+> Switch from one branch to another:
+
+```
+git checkout <branchname>
+```
+
+> Delete the feature branch:
+
+```
+git branch -d <branchname>
+```
+Note: To delete forcefully use `-D` instead of `-d`
+
+> Push the branch to your remote repository, so others can use it:
+
+```
+git push origin <branchname>
+```
+
+> Push all branches to your remote repository:
+
+```
+git push --all origin
+```
+
+> Delete a branch on your remote repository:
+
+```
+git push origin :<branchname>
+```
+
+## Update from the remote repository
+
+> Fetch and merge changes on the remote server to your working directory:
+
+```
+git pull
+```
+
+> To merge a different branch into your active branch:
+
+```
+git merge <branchname>
+```
+
+
+> View all the merge conflicts:
+
+```
+git diff
+```
+
+
+> View the conflicts against the base file:
+
+```
+git diff --base <filename>
+```
+
+> Preview changes, before merging:
+```
+git diff <sourcebranch> <targetbranch>
+```
+
+> After you have manually resolved any conflicts, you mark the changed file:
+
+```
+git add <filename>
+```
+
+## Undo local changes
+
+> If you mess up, you can replace the changes in your working tree with the last content in head:
+Changes already added to the index, as well as new files, will be kept.
+
+```
+git checkout -- <filename>
+git checkout -- . 
+```
+
+> Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:
+
+```
+git fetch origin
+
+git reset --hard origin/master
+```
+
+## Search
+
+> Search the working directory for foo():
+
+```
+git grep "foo()"
+```
+
+
+
+
+
+
