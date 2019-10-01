@@ -41,6 +41,13 @@ git add <file>
 git add .
 ```
 
+## Removing a file from staging area
+
+> Remove one or more files from staging area :
+```
+git rm --cached <filename>
+```
+
 ## Status
 
 > List the files you've changed and those you still need to add or commit: 
