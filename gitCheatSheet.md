@@ -230,6 +230,7 @@ git log
 
 ```
 
+
 > To filter out a commit after a specific time or a date you can do this  : 
 
 ```
@@ -237,6 +238,70 @@ git log --after="2019-10-8"
 git log --after="yesterday"
 git log --after="2017-7-1" --before="2017-7-4"
 ```
+
+## Interacting with others
+
+> Import a GNU Arch repository into Git
+
+```
+git-archimport[1]
+```
+
+> Export a single commit to a CVS checkout
+
+```
+git-cvsexportcommit[1]
+```
+
+> Salvage your data out of another SCM people love to hate
+
+```
+git-cvsimport[1]
+```
+
+> A CVS server emulator for Git
+
+```
+git-cvsserver[1]
+```
+
+> Send a collection of patches from stdin to an IMAP folder
+
+```
+git-imap-send[1]
+```
+
+> Import from and submit to Perforce repositories
+
+```
+git-p4[1]
+```
+
+> Applies a quilt patchset onto the current branch
+
+```
+git-quiltimport[1]
+```
+
+> Generates a summary of pending changes
+
+```
+git-request-pull[1]
+```
+
+> Send a collection of patches as emails
+
+```
+git-send-email[1]
+```
+
+> Bidirectional operation between a Subversion repository and Git
+
+```
+git-svn[1]
+```
+
+
 
 
 
