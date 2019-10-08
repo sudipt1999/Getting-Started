@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Git Cheatsheet</title>
 </head>
 <link rel="stylesheet" href="main.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+
 <body>
     <h1>Git Cheat Sheet</h1>
     <p>Refer this cheat sheet when ever you are stuck somewhere.</p>
-    
-    
+
+    <br><br>
     <h2>Setting up Softwares.</h2>
-    <p>To work on Github hosted projects, one has to use Git - a Version Control System. So the first task is to install git on your machine. For Windows users, download git from here - https://git-scm.com/downloads. For Linux users, you can use your distro's package manager to install git.</p>
+    <p>To work on Github hosted projects, one has to use Git - a Version Control System. So the first task is to install
+        git on your machine. For Windows users, download git from here - https://git-scm.com/downloads. For Linux users,
+        you can use your distro's package manager to install git.</p>
     <p>Note: Although Linux isn't mandatory, it is preferred while working with Open Source Software.</p>
     <p>Note: You can learn about Version Control Systems (VCS) here.
     </p>
+
+
+
+    <br><br>
+
 
     <h2>Tell Git Who You Are ?</h2>
     <h3>> Configure the author name and email address to be used with your commits.</h3>
     <p>Note that Git strips some characters (for example trailing periods) from user.name.</p>
 
     <div class="code">
-        git config --global user.name "your Name"
-    </div>
-    <div class="code">
+        git config --global user.name "your Name"<br>
         git config --global user.email your@example.com
     </div>
-
+    <br> <br>
     <h2>Check Out A repository</h2>
     <h3>> Create a working copy of a local repository: </h3>
     <div class="code">git clone /path/to/repository</div>
 
     <h2>Add files</h2>
     <h3>> Add one or more files to repo: </h3>
-    <div class="code">git add <file></file></div>
+    <div class="code">git add &lt;file&gt;
+    </div>
+    <h3>> Or you can add all files at a single time: </h3>
+    <div class="code">git add .</div>
 
+    <h2>Removing a file from staging area</h2>
+    <h3>Remove one or more files from staging area :</h3>
+
+    <div class="code">git rm --cached &lt;filename&gt;</div>
+    <br><br>
+    <h2>Status</h2>
+    <h3>List the files you've changed and those you still need to add or commit: </h3>
+    <div class="code">git Status</div>
+    <br><br>
+    <h2> Reseting added files</h2>
+    <h3>Often you would add files mistakenly to repo now you feel to discard the added file(s):</h3>
+    <div class="code">git reset &lt;file&gt;</div>
+    <br><br>
+    <h2>Commit</h2>
+    <h3>Commit changes to head (but not yet to the remote repository):</h3>
+    <div class="code">git commit -m "Commit message"</div>
+    <h3>Commit any files you've added with git add, and also commit any files you've changed since then:</h3>
+    <div class="code">git commit -a</div>
+    <p>Note : Writing a good commit message is a art, kindly refer to <a href="https://github.com/erlang/otp/wiki/writing-good-commit-messages">writing-good-commit-messages</a> to know more about writing good commit message</p>
+    
 </body>
+
 </html>
