@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Git Cheatsheet</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+
+<body>
+    <h1>Git Cheat Sheet</h1>
+    <p>Refer this cheat sheet when ever you are stuck somewhere.</p>
+
+    <br><br>
+    <h2>Setting up Softwares.</h2>
+    <p>To work on Github hosted projects, one has to use Git - a Version Control System. So the first task is to install
+        git on your machine. For Windows users, download git from here - https://git-scm.com/downloads. For Linux users,
+        you can use your distro's package manager to install git.</p>
+    <p>Note: Although Linux isn't mandatory, it is preferred while working with Open Source Software.</p>
+    <p>Note: You can learn about Version Control Systems (VCS) here.
+    </p>
+
+
+
+    <br><br>
+
+
+    <h2>Tell Git Who You Are ?</h2>
+    <h3>> Configure the author name and email address to be used with your commits.</h3>
+    <p>Note that Git strips some characters (for example trailing periods) from user.name.</p>
+
+    <div class="code">
+        git config --global user.name "your Name"<br>
+        git config --global user.email your@example.com
+    </div>
+    <br> <br>
+    <h2>Check Out A repository</h2>
+    <h3>> Create a working copy of a local repository: </h3>
+    <div class="code">git clone /path/to/repository</div>
+    <br><br>
+    <h2>Add files</h2>
+    <h3>> Add one or more files to repo: </h3>
+    <div class="code">git add &lt;file&gt;
+    </div>
+    <h3>> Or you can add all files at a single time: </h3>
+    <div class="code">git add .</div>
+    <br><br>
+    <h2>Removing a file from staging area</h2>
+    <h3>Remove one or more files from staging area :</h3>
+
+    <div class="code">git rm --cached &lt;filename&gt;</div>
+    <br><br>
+    <h2>Status</h2>
+    <h3>List the files you've changed and those you still need to add or commit: </h3>
+    <div class="code">git Status</div>
+    <br><br>
+    <h2> Reseting added files</h2>
+    <h3>Often you would add files mistakenly to repo now you feel to discard the added file(s):</h3>
+    <div class="code">git reset &lt;file&gt;</div>
+    <br><br>
+    <h2>Commit</h2>
+    <h3>Commit changes to head (but not yet to the remote repository):</h3>
+    <div class="code">git commit -m "Commit message"</div>
+    <h3>Commit any files you've added with git add, and also commit any files you've changed since then:</h3>
+    <div class="code">git commit -a</div>
+    <p>Note : Writing a good commit message is a art, kindly refer to <a
+            href="https://github.com/erlang/otp/wiki/writing-good-commit-messages">writing-good-commit-messages</a> to
+        know more about writing good commit message</p>
+    <br><br>
+    <h2>Push</h2>
+    <h3>Send changes to the master branch of your remote repository:</h3>
+    <div class="code">git push origin master</div>
+    <h3>You can also push updates to specific branch on remote repository:</h3>
+    <div class="code">git push origin &lt;branch&gt;</div>
+    <br><br>
+    <h2>Connect to a remote repository</h2>
+    <h3>If you haven't connected your local repository to a remote server, add the server to be able to push to it:</h3>
+    <div class="code"> git add remote origin &lt;url&gt;</div>
+    <p>Note: This is used when you have forked a repo, it adds the repo to the list you can pull and push(if you have
+        access) to the remote repo.</p>
+    <h3>List all currently configured remote repositoriesL</h3>
+    <div class="code">git remote -v</div>
+    <br><br>
+    <h2>Branches
+    </h2>
+    <h3>> List all the branches in your repo, and also tell you what branch you're currently in:</h3>
+    <div class="code">git branch</div>
+    <h3>Create a new branch and switch to it:</h3>
+    <div class="code">git checkout -b &lt;branchname&gt;</div>
+    <h3>Switch from one branch to another:</h3>
+    <div class="code">git checkout &lt;branchname&gt;</div>
+    <h3>Delete the Feature Branch</h3>
+    <div class="code">git branch -d &lt;branchname&gt;</div>
+    <p>Note: To delete forcefully use `-D` instead of `-d`</p>
+    <h3>Push the branch to your remote repository, so others can use it:</h3>
+    <div class="code">git push origin &lt;branchname&gt;</div>
+    <h3>Push all branches to your remote repository:</h3>
+    <div class="code">git push --all origin</div>
+    <h3>Delete a branch on your remote repository:</h3>
+    <div class="code">git push origin :&lt;branchname&gt;</div>
+    <br><br>
+    <h2>Update from the remote repository</h2>
+    <h3>Fetch and merge changes on the remote server to your working directory:</h3>
+    <div class="code">git pull</div>
+    <h3>To merge a different branch into your active branch:</h3>
+    <div class="code">git merge &lt;branchname&gt;</div>
+    <h3>View all the merge conflicts:</h3>
+    <div class="code">git diff</div>
+    <h3>View the conflicts against the base file:</h3>
+    <div class="code">git diff --base &lt;filename&gt;</div>
+    <h3>Preview Changes,Before merging</h3>
+    <div class="code">git diff &lt;sourcebranch&gt; &lt;targetbranch&gt;</div>
+    <h3>After you have manually resolved any conflicts, you mark the changed file:</h3>
+    <div class="code">git add &lt;filename&gt;</div>
+    <br><br>
+    <h2>Undo local changes</h2>
+    <h3>If you mess up, you can replace the changes in your working tree with the last content in head:</h3>
+    <p>Changes already added to the index, as well as new files, will be kept.</p>
+    <div class="code">git checkout -- &lt;filename&gt; <br> git checkout -- .</div>
+    <h3>Instead, to drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it, do this:</h3>
+    <div class="code">git fetch origin <br> git reset --hard origin/master</div>
+    <br><br>
+    <h2>Search </h2>
+    <h3>Search the working directory for foo():</h3>
+    <div class="code">git grep "foo()"</div>
+
+</body>
+
+</html>
