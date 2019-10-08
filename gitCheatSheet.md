@@ -20,6 +20,20 @@ git config --global user.name "your Name"
 git config --global user.email your@example.com
 ```
 
+
+## Create a repository
+Start a new repository or obtain one from an existing URL
+> Creates a new local repository with the specified name. 
+
+```
+git init [project-name]
+```
+> Downloads a project and its entire version history
+
+```
+git clone [url]
+```
+
 ## Initializing a local git repository 
 
 > Create a empty git repository on your machine / workspace :
@@ -33,51 +47,41 @@ git init
 
 > Create a working copy of a local repository: 
 
-```
-git clone /path/to/repository
-```
-
-## Add files
-
-> Add one or more files to repo: 
 
 ```
-git add <file>
-```
-> Or you can add all files at a single time: 
-
-```
-git add .
+git init [project-name]
 ```
 
-## Status
+> Downloads a project and its entire version history
 
-> List the files you've changed and those you still need to add or commit: 
+```
+git clone [url]
+```
 
+## Make Changes in repository
+> Snapshots the file in preparation for versioning
+```
+git add [file]
+```
+> Lists all new or modified files to be committed
 ```
 git status
 ```
-
-## Reseting added files
-
-> Often you would add files mistakenly to repo now you feel to discard the added file(s):
-
+> Unstages the file, but preserve its contents
 ```
-git reset <file>
+git reset [file]
 ```
-
-## Commit
-
-> Commit changes to head (but not yet to the remote repository):
-
+> Shows file differences not yet staged
 ```
-git commit -m "Commit message"
+git diff
 ```
-
-> Commit any files you've added with git add, and also commit any files you've changed since then:
-
+> Shows file differences between staging and the last file version
 ```
-git commit -a
+git diff --staged
+```
+> Records file snapshots permanently in version history
+```
+git commit -m "[descriptive message]"
 ```
 Note : Writing a good commit message is a art, kindly refer to [link](https://github.com/erlang/otp/wiki/writing-good-commit-messages) to know more about writing good commit message.
 
@@ -302,8 +306,42 @@ git-svn[1]
 ```
 
 
+## Save Fragments
+> Temporarily stores all modified tracked files
+```
+git stash
+```
+> Lists all stashed changesets
+```
+git stash list
+```
+> Restores the most recently stashed files
+```
+git stash pop
+```
+> Discards the most recently stashed changeset
+```
+git stash drop
+```
 
+## Review History
 
+> Lists version history for the current branch
+```
+git log
+```
+> Lists version history for a file, including renames
+```
+git log --follow [file]
+```
+> Shows content differences between two branches
+```
+git diff [first-branch]...[second-branch]
+```
+> Outputs metadata and content changes of the specified commit
+```
+git show [commit]
+```
 
 
 
