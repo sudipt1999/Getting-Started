@@ -1,0 +1,32 @@
+
+/* basic fonts for the site  */
+
+@import url('https://fonts.googleapis.com/css?family=Acme|EB+Garamond&display=swap');
+
+h1{
+    font-family: 'Acme' , sans-serif;
+}
+
+h2{
+    font-family: 'EB Garamond' ,serif;
+}
+
+
+p{
+    font-family: 'EB Garamond' ,serif;
+    font-size:20px;
+}
+
+
+#heading{
+    font-weight:bold;
+}
+
+.card{
+    color:white;
+    font-weight: bold;
+}
+
+#altertext{
+    color:white;
+}

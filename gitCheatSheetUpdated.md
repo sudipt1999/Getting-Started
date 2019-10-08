@@ -197,7 +197,7 @@ git add <filename>
 ## Undo local changes
 
 > If you mess up, you can replace the changes in your working tree with the last content in head:
-Changes already added to the index, as well as new files, will be kept.
+Changes already added to the index, as well as new files, will be kept.   
 
 ```
 git checkout -- <filename>

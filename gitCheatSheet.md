@@ -20,6 +20,7 @@ git config --global user.name "your Name"
 git config --global user.email your@example.com
 ```
 
+
 ## Create a repository
 Start a new repository or obtain one from an existing URL
 > Creates a new local repository with the specified name. 
@@ -27,6 +28,30 @@ Start a new repository or obtain one from an existing URL
 ```
 git init [project-name]
 ```
+> Downloads a project and its entire version history
+
+```
+git clone [url]
+```
+
+## Initializing a local git repository 
+
+> Create a empty git repository on your machine / workspace :
+
+```
+git init 
+```
+
+
+## Check out a repository
+
+> Create a working copy of a local repository: 
+
+
+```
+git init [project-name]
+```
+
 > Downloads a project and its entire version history
 
 ```
@@ -200,6 +225,86 @@ git reset --hard origin/master
 ```
 git grep "foo()"
 ```
+## Commit history 
+
+> After you have created many commits or changes to an existing repository , to see what has happened or the commit history  do this : 
+
+```
+git log
+
+```
+
+
+> To filter out a commit after a specific time or a date you can do this  : 
+
+```
+git log --after="2019-10-8"
+git log --after="yesterday"
+git log --after="2017-7-1" --before="2017-7-4"
+```
+
+## Interacting with others
+
+> Import a GNU Arch repository into Git
+
+```
+git-archimport[1]
+```
+
+> Export a single commit to a CVS checkout
+
+```
+git-cvsexportcommit[1]
+```
+
+> Salvage your data out of another SCM people love to hate
+
+```
+git-cvsimport[1]
+```
+
+> A CVS server emulator for Git
+
+```
+git-cvsserver[1]
+```
+
+> Send a collection of patches from stdin to an IMAP folder
+
+```
+git-imap-send[1]
+```
+
+> Import from and submit to Perforce repositories
+
+```
+git-p4[1]
+```
+
+> Applies a quilt patchset onto the current branch
+
+```
+git-quiltimport[1]
+```
+
+> Generates a summary of pending changes
+
+```
+git-request-pull[1]
+```
+
+> Send a collection of patches as emails
+
+```
+git-send-email[1]
+```
+
+> Bidirectional operation between a Subversion repository and Git
+
+```
+git-svn[1]
+```
+
 
 ## Save Fragments
 > Temporarily stores all modified tracked files
