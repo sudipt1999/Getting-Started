@@ -1,0 +1,13 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+}
+
+.code {
+    background-color: #D3D3D3;
+    border-radius: 20px;
+    width: 50%;
+}

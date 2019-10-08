@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Git Cheatsheet</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap" rel="stylesheet">
+<body>
+    <h1>Git Cheat Sheet</h1>
+    <p>Refer this cheat sheet when ever you are stuck somewhere.</p>
+    
+    
+    <h2>Setting up Softwares.</h2>
+    <p>To work on Github hosted projects, one has to use Git - a Version Control System. So the first task is to install git on your machine. For Windows users, download git from here - https://git-scm.com/downloads. For Linux users, you can use your distro's package manager to install git.</p>
+    <p>Note: Although Linux isn't mandatory, it is preferred while working with Open Source Software.</p>
+    <p>Note: You can learn about Version Control Systems (VCS) here.
+    </p>
+
+    <h2>Tell Git Who You Are ?</h2>
+    <h3>> Configure the author name and email address to be used with your commits.</h3>
+    <p>Note that Git strips some characters (for example trailing periods) from user.name.</p>
+
+    <div class="code">
+        git config --global user.name "your Name"
+    </div>
+    <div class="code">
+        git config --global user.email your@example.com
+    </div>
+
+    <h2>Check Out A repository</h2>
+    <h3>> Create a working copy of a local repository: </h3>
+    <div class="code">git clone /path/to/repository</div>
+
+    <h2>Add files</h2>
+    <h3>> Add one or more files to repo: </h3>
+    <div class="code">git add <file></file></div>
+
+</body>
+</html>
