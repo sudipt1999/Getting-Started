@@ -213,6 +213,68 @@ git reset --hard origin/master
 git grep "foo()"
 ```
 
+## Interacting with others
+
+> Import a GNU Arch repository into Git
+
+```
+git-archimport[1]
+```
+
+> Export a single commit to a CVS checkout
+
+```
+git-cvsexportcommit[1]
+```
+
+> Salvage your data out of another SCM people love to hate
+
+```
+git-cvsimport[1]
+```
+
+> A CVS server emulator for Git
+
+```
+git-cvsserver[1]
+```
+
+> Send a collection of patches from stdin to an IMAP folder
+
+```
+git-imap-send[1]
+```
+
+> Import from and submit to Perforce repositories
+
+```
+git-p4[1]
+```
+
+> Applies a quilt patchset onto the current branch
+
+```
+git-quiltimport[1]
+```
+
+> Generates a summary of pending changes
+
+```
+git-request-pull[1]
+```
+
+> Send a collection of patches as emails
+
+```
+git-send-email[1]
+```
+
+> Bidirectional operation between a Subversion repository and Git
+
+```
+git-svn[1]
+```
+
 
 
 
