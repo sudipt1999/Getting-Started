@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Git Commands</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1 class="text-center m-4">Git Cheat Sheet</h1>
+
+        <div class="container text-center">
+
+            <h2>What is GIT ?</h2><br><br>
+            <p>
+
+                So GIT is basically a distributed version-control system for tracking changes during software
+                development . It is designed for co-ordinating work among programmers , but it can be used to track
+                changes in any set of files , Its goals include speed , data integrity , and support for distributed and
+                non-linear workflows .
+
+
+            </p>
+        </div>
+
+        <h2 class="text-center m-4" id="heading">Features of Git</h2>
+        <!--div Start of the features of git -->
+        <div class="card-columns ">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <p class="card-text">
+
+                        Feature Branch Workflow
+
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-success">
+                <div class="card-body text-center">
+                    <p class="card-text">Distributed Developement</p>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+                    <p class="card-text">Better Code Management</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--div  end of the features of git  -->
+
+
+
+        <!-- start of the cheatSheet -->
+
+        <h2 class="text-center m-4" id="heading">CheatSheet</h2>
+
+
+
+        <div class="container mt-5">
+
+            <div class="card bg-dark">
+                <div class="card-body text-center">
+                    <h2 class="card-title" id="heading">Initializing a local git repo</h2>
+                    <p class="card-text">
+                        <blockquote>Create an empty git reop on your machine/workspace</blockquote>
+
+                        <code>
+                            > git init
+                        </code>
+                    </p>
+                </div>
+
+                <div class="card bg-warning">
+                    <div class="card-body text-center">
+                        <h2 class="card-title" id="heading">Cloning the repo</h2>
+                        <p class="card-text">
+                            <blockquote>Create a working copy of a local repository:</blockquote>
+
+                            <code>
+                                > git clone /path/to/repository
+                            </code>
+                        </p>
+                    </div>
+
+
+
+                </div>
+
+
+                <div class="card bg-info">
+                    <div class="card-body text-center">
+                        <h2 class="card-title" id="heading">Adding files</h2>
+                        <p class="card-text">
+                            <blockquote>Add one or more files to the repo</blockquote>
+
+                            <code>
+                                > git add "fileName" <br>
+                            </code>
+                            <blockquote>To add all the files to the repo</blockquote>
+                            <code>
+                                > git add .
+                            </code>
+                        </p>
+                    </div>
+
+
+                </div>
+
+
+                <div class="card bg-success">
+                        <div class="card-body text-center">
+                            <h2 class="card-title" id="heading">Status</h2>
+                            <p class="card-text">
+                                <blockquote>List the files you've changed and those you still need to add or commit:</blockquote>
+    
+                                <code>
+                                    > git status
+                                </code>
+                            </p>
+                        </div>
+    
+    
+    
+                    </div>
+
+                    <div class="card bg-dark">
+                            <div class="card-body text-center">
+                                <h2 class="card-title" id="heading">Reseting added files</h2>
+                                <p class="card-text">
+                                    <blockquote>Often you would add files mistakenly to repo now you feel to discard the added file(s):</blockquote>
+            
+                                    <code>
+                                        > git reset "fileName"
+                                    </code>
+                                </p>
+                            </div>
+
+
+
+
+                            <div class="card bg-warning">
+                                    <div class="card-body text-center">
+                                        <h2 class="card-title" id="heading">Commit</h2>
+                                        <p class="card-text">
+                                            <blockquote>Commit changes to head (but not yet to the remote repository):</blockquote>
+                
+                                            <code>
+                                                > git commit -m "Commit message"
+                                            </code>
+
+                                            <blockquote>
+                                                    Commit any files you've added with git add, and also commit any files you've changed since then:
+                                            </blockquote>
+                                            <code>
+                                                > git commit -a
+                                            </code>
+                                        </p>
+                                    </div>
+                
+                
+                
+                                </div>
+
+                                <div class="card bg-info">
+                                        <div class="card-body text-center">
+                                            <h2 class="card-title" id="heading">Pushing to Git</h2>
+                                            <p class="card-text">
+                                                <blockquote>Send changes to the master branch of your remote repository:</blockquote>
+                    
+                                                <code>
+                                                    > git push origin master <br>
+                                                </code>
+                                                <blockquote>To add all the files to the repo</blockquote>
+                                                <code>
+                                                    > git add .
+                                                </code>
+
+                                                <blockquote>
+                                                        You can also push updates to specific branch on remote repository:
+                                                </blockquote>
+                                                <code>
+                                                  > git push origin "branchName"  
+                                                </code>
+                                            </p>
+                                        </div>
+                    
+                    
+                                    </div>
+                
+
+                <!-- end the cheatsheet div -->
+
+
+            </div>
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

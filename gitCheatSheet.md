@@ -20,6 +20,15 @@ git config --global user.name "your Name"
 git config --global user.email your@example.com
 ```
 
+## Initializing a local git repository 
+
+> Create a empty git repository on your machine / workspace :
+
+```
+git init 
+```
+
+
 ## Check out a repository
 
 > Create a working copy of a local repository: 
@@ -212,6 +221,23 @@ git reset --hard origin/master
 ```
 git grep "foo()"
 ```
+## Commit history 
+
+> After you have created many commits or changes to an existing repository , to see what has happened or the commit history  do this : 
+
+```
+git log
+
+```
+
+
+> To filter out a commit after a specific time or a date you can do this  : 
+
+```
+git log --after="2019-10-8"
+git log --after="yesterday"
+git log --after="2017-7-1" --before="2017-7-4"
+```
 
 ## Interacting with others
 
@@ -274,6 +300,7 @@ git-send-email[1]
 ```
 git-svn[1]
 ```
+
 
 
 
