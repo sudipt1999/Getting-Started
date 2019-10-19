@@ -1,19 +1,20 @@
 
 /* basic fonts for the site  */
 
-@import url('https://fonts.googleapis.com/css?family=Acme|EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
 h1{
-    font-family: 'Acme' , sans-serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 h2{
-    font-family: 'EB Garamond' ,serif;
+    font-family: 'Cabin', sans-serif;    
 }
 
 
 p{
-    font-family: 'EB Garamond' ,serif;
+    font-family: 'Cabin', sans-serif;
+
     font-size:20px;
 }
 
@@ -29,4 +30,28 @@ p{
 
 #altertext{
     color:white;
+}
+.bg-red{
+    background: #FF3E4D;
+}
+.bg-red code{
+    color: black;
+}
+.bg-blue{
+    background: #0A3D62;
+}
+.bg-green{
+    background: #1BCA9B;
+}
+.bg-parrot{
+    background: #badc57;
+}
+.bg-yellow{
+    background: #F4C724;
+}
+.bg-pink{
+    background: #E74292;
+}
+.bg-purple{
+    background: #BB2CD9;
 }
