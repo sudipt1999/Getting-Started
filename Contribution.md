@@ -26,3 +26,5 @@ Push the changes !
 
 ## Step 8 :
 Create a pull request !
+
+Special Thanks to Anirudh Ghildiyal
