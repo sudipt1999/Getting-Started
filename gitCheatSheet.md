@@ -8,7 +8,7 @@ To work on Github hosted projects, one has to use Git - a Version Control System
 
 Note: Although Linux isn't mandatory, it is preferred while working with Open Source Software.
 
-Note: You can learn about Version Control Systems (VCS) here.
+Note: You can learn about Version Control Systems (VCS) [here](https://www.atlassian.com/git/tutorials/what-is-version-control).
 
 ## Tell Git Who You Are ?
 
@@ -241,6 +241,12 @@ git log
 git log --after="2019-10-8"
 git log --after="yesterday"
 git log --after="2017-7-1" --before="2017-7-4"
+```
+
+> To see how the repository is organized you can do this:
+
+```
+git log --graph --decorate --pretty=oneline --abbrev-commit --all
 ```
 
 ## Interacting with others
