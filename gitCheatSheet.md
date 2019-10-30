@@ -343,5 +343,8 @@ git diff [first-branch]...[second-branch]
 git show [commit]
 ```
 
+## Links to go forward
+
+https://learngitbranching.js.org/
 
 
