@@ -315,13 +315,21 @@ git stash
 ```
 git stash list
 ```
-> Restores the most recently stashed files
+> Restores the most recently stashed files (and keep it from stashed changesets)
+```
+git stash apply
+```
+> Restores the most recently stashed files (and removed it from stashed changesets)
 ```
 git stash pop
 ```
 > Discards the most recently stashed changeset
 ```
 git stash drop
+```
+> Discards all stashed changesets
+```
+git stash clear
 ```
 
 ## Review History
