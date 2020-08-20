@@ -11,6 +11,7 @@ p,h2,h3 {
 }
 
 .code {
+    padding: 1em;
     background-color: #D3D3D3;
     border-radius: 20px;
     width: 50%;
